@@ -11,6 +11,7 @@ RUN pip install "ipython[notebook]"
 RUN gem install --no-rdoc --no-ri iruby pry nmatrix rubyvis nyaplot && iruby register
 
 ADD . /notebooks
+WORKDIR /notebooks
 
 EXPOSE 8888
 
