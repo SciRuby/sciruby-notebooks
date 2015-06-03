@@ -7,7 +7,7 @@ RUN apt-get update && \
 		       ruby ruby-dev								\
 		       libzmq3 libzmq3-dev 							\
 		       libtool autoconf automake 	`# used by rbczmq`			\
-		       libatlas-base-dev		`# used by nmatrix`			\
+		       libatlas-base-dev		`# used by nmatrix`		     && \
     apt-get clean && \
     ln -s /usr/bin/libtoolize /usr/bin/libtool # See https://github.com/zeromq/libzmq/issues/1385
 
