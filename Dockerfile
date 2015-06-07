@@ -7,8 +7,11 @@ RUN apt-get update && \
 		       python3 python3-dev python3-pip \
 		       ruby ruby-dev		       \
 		       libzmq3 libzmq3-dev 	       \
+		       gnuplot-nox		       \
 		       # used by rbczmq
 		       libtool autoconf automake       \
+		       # used by gsl-nmatrix
+		       libgsl0-dev		       \
 		       # used by nmatrix
 		       libatlas-base-dev	    && \
     apt-get clean && \
@@ -16,7 +19,16 @@ RUN apt-get update && \
 
 RUN pip3 install "ipython[notebook]"
 
-RUN gem install --no-rdoc --no-ri iruby pry nmatrix rubyvis nyaplot && iruby register
+RUN gem install --no-rdoc --no-ri iruby pry						\
+				  nmatrix gsl-nmatrix					\
+				  rubyvis nyaplot plotrb gnuplot			\
+				  awesome_print						\
+				  minimization integration distribution			\
+				  statsample statsample-glm				\
+				  statsample-timeseries statsample-bivariate-extension 	\
+				  extendmatrix						\
+			          daru						     && \
+    iruby register
 
 ADD . /notebooks
 WORKDIR /notebooks
