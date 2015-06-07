@@ -35,4 +35,8 @@ WORKDIR /notebooks
 
 EXPOSE 8888
 
+# Convert notebooks to the current format
+RUN find . -name '*.ipynb' -exec ipython nbconvert --to notebook {} --output {} \;
+RUN find . -name '*.ipynb' -exec ipython trust {} \;
+
 CMD ipython notebook
