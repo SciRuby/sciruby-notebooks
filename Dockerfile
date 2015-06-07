@@ -28,6 +28,7 @@ RUN gem install --no-rdoc --no-ri iruby pry						\
 				  statsample-timeseries statsample-bivariate-extension 	\
 				  extendmatrix						\
                                   publisci                                              \
+                                  ai4r                                                  \
 			          daru						     && \
     iruby register
 
