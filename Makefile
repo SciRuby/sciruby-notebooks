@@ -4,7 +4,7 @@ image:
 
 .PHONY: run
 run:
-	docker run -d -P sciruby
+	docker run -d -p 8888:8888 sciruby
 
 .PHONY: nuke
 nuke:
