@@ -12,6 +12,8 @@ RUN apt-get update && \
 		       libtool autoconf automake       \
 		       # used by gsl-nmatrix
 		       libgsl0-dev		       \
+                       # used by nokogiri/publisci, see http://www.nokogiri.org/tutorials/installing_nokogiri.html
+                       zlib1g-dev                      \
 		       # used by nmatrix
 		       libatlas-base-dev	    && \
     apt-get clean && \
