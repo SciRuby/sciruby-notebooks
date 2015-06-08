@@ -21,18 +21,7 @@ RUN apt-get update && \
 
 RUN pip3 install "ipython[notebook]"
 
-RUN gem install --no-rdoc --no-ri iruby pry						\
-				  nmatrix gsl-nmatrix					\
-				  rubyvis nyaplot plotrb gnuplot			\
-				  awesome_print						\
-				  minimization integration distribution			\
-				  statsample statsample-glm				\
-				  statsample-timeseries statsample-bivariate-extension 	\
-				  extendmatrix						\
-                                  publisci                                              \
-                                  ai4r                                                  \
-			          daru						     && \
-    iruby register
+RUN gem install --no-rdoc --no-ri sciruby-full && iruby register
 
 ADD . /notebooks
 WORKDIR /notebooks
