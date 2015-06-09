@@ -14,6 +14,8 @@ RUN apt-get update && \
 		       libgsl0-dev		       \
                        # used by nokogiri/publisci, see http://www.nokogiri.org/tutorials/installing_nokogiri.html
                        zlib1g-dev                      \
+                       # used by stuff-classifier
+                       libsqlite3-dev                  \
 		       # used by nmatrix
 		       libatlas-base-dev	    && \
     apt-get clean && \
