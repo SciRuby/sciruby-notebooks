@@ -9,10 +9,9 @@ RUN apt-get update && \
 	ruby ruby-dev		        \
 	libzmq3 libzmq3-dev 	        \
 	gnuplot-nox		        \
+	libgsl0-dev		        \
 	# used by rbczmq
 	libtool autoconf automake       \
-	# used by gsl-nmatrix
-	libgsl0-dev		        \
         # used by nokogiri/publisci, see http://www.nokogiri.org/tutorials/installing_nokogiri.html
         zlib1g-dev                      \
         # used by stuff-classifier
