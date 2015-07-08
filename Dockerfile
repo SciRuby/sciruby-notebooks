@@ -16,6 +16,8 @@ RUN apt-get update && \
         zlib1g-dev                      \
         # used by stuff-classifier
         libsqlite3-dev                  \
+        # used by rmagick
+        libmagick++-dev imagemagick     \
 	# used by nmatrix
 	libatlas-base-dev	     && \
     apt-get clean && \
