@@ -25,7 +25,9 @@ RUN apt-get update && \
 
 RUN pip3 install "ipython[notebook]"
 
-RUN gem install --no-rdoc --no-ri sciruby-full && iruby register
+RUN gem update --no-document --system && \
+    gem install --no-document sciruby-full && \
+    iruby register
 
 ADD . /notebooks
 WORKDIR /notebooks
