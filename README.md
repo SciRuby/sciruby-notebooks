@@ -1,4 +1,7 @@
 # SciRuby example notebooks
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/sciruby-jp/sciruby-notebooks)
+
+You can try SciRuby example notebooks without installing IRuby. Please click *launch binder* badge.
 
 This repository includes a bunch of notebooks showing the functionality of iruby and scientific ruby gems.
 
