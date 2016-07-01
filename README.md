@@ -1,5 +1,5 @@
 # SciRuby example notebooks
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/sciruby-jp/sciruby-notebooks)
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/SciRuby/sciruby-notebooks)
 
 You can try SciRuby example notebooks without installing IRuby. Please click *launch binder* badge.
 
